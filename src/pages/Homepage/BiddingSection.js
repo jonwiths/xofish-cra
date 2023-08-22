@@ -56,40 +56,41 @@ const BiddingSection = () => {
               key={item.id}
               className={
                 item.id === 1
-                  ? `py-10 px-24 w-full flex justify-between items-center border-2 border-gray-300 rounded-3xl shadow-gray-300 shadow-md md:mb-5 mb-4 text-white bg-[#003685]`
-                  : `py-10 px-24 w-full flex justify-between items-center  border-2 border-gray-300 rounded-3xl shadow-gray-300 shadow-md md:mb-5 mb-4`
+                  ? `py-10 lg:px-16 px-2 w-full flex lg:flex-row flex-col justify-between  items-center border-2 border-gray-300 rounded-3xl shadow-gray-300 shadow-md md:mb-5 mb-4 text-white bg-[#003685]`
+                  : `py-10 lg:px-16 px-2 w-full flex lg:flex-row flex-col justify-between  items-center border-2 border-gray-300 rounded-3xl shadow-gray-300 shadow-md md:mb-5 mb-4`
               }
               data-aos="fade-up"
             >
-              <div className="flex flex-row">
+              <div className="w-full flex lg:flex-row flex-col items-center ">
                 <BiSolidCalendar
                   className={
-                    item.id !== 1
-                      ? 'md:text-[70px] text-[#003685] mr-24'
-                      : 'md:text-[70px] white mr-24'
+                    item.id === 1
+                      ? `lg:text-[70px] md:text-[50px] text-[40px] text-white lg:mr-24 mr-0 lg:mb-0 mb-4`
+                      : `lg:text-[70px] md:text-[50px] text-[40px] text-[#003685] lg:mr-24 mr-0 lg:mb-0 mb-4`
                   }
                 />
                 <div
                   className={
-                    item.id !== 1
-                      ? `flex flex-col items-start gap-y-2 text-gray-700`
-                      : `flex flex-col items-start gap-y-2 text-white`
+                    item.id === 1
+                      ? `flex flex-col lg:items-start items-center gap-y-2 text-white`
+                      : `flex flex-col lg:items-start items-center gap-y-2 text-gray-700`
                   }
                 >
-                  <h2 className="text-4xl font-medium ">
+                  <h2 className="lg:text-4xl md:text-3xl text-2xl font-medium w-full ">
                     Bidding - {item.title}
                   </h2>
-                  <h4 className="text-xl flex items-center gap-1">
+                  <h4 className="text-xl flex items-center gap-1 lg:mb-0 mb-8">
                     {' '}
                     <AiOutlineClockCircle /> {item.start_time} - {item.end_time}
                   </h4>
                 </div>
               </div>
+
               <button
                 className={
-                  item.id !== 1
-                    ? `py-4 px-12 bg-[#003685] hover:bg-blue-700 text-white font-semibold text-xl rounded-full shadow-blue-200 shadow-xl transition ease-in`
-                    : 'py-4 px-12 bg-white hover:bg-gray-100 text-[#003685] font-semibold text-xl rounded-full shadow-blue-800 shadow-xl transition ease-in'
+                  item.id === 1
+                    ? `max-w-[230px] md:w-full p-4 bg-white hover:bg-gray-100 text-[#003685] font-semibold md:text-xl text-base rounded-full shadow-blue-800 shadow-md transition ease-in`
+                    : `max-w-[230px] md:w-full p-4 bg-[#003685] hover:bg-blue-700 text-white font-semibold md:text-xl text-base rounded-full shadow-blue-200 shadow-xl transition ease-in`
                 }
               >
                 JOIN NOW

@@ -24,6 +24,7 @@ const navLinks = [
     url: '/about-us'
   }
 ];
+
 const Navbar = () => {
   return (
     <>
