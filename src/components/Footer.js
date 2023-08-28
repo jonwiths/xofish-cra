@@ -3,16 +3,24 @@ import { Link } from 'react-router-dom';
 
 const links = [
   {
-    name: 'Betta Zone',
-    url: '#'
+    name: 'Home',
+    url: '/'
   },
   {
-    name: 'Bidding',
-    url: '#'
+    name: 'About Us',
+    url: '/about-us'
   },
   {
-    name: 'Contact Us',
-    url: '#'
+    name: 'Fish',
+    url: '/fish'
+  },
+  {
+    name: 'Services',
+    url: '/services'
+  },
+  {
+    name: 'Shop',
+    url: '/shop'
   }
 ];
 

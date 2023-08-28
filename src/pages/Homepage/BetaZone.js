@@ -42,6 +42,7 @@ const BetaZone = () => {
   return (
     <>
       <section
+        id="beta-zone"
         className="container mx-auto font-poppins relative md:mt-36 mt-10 "
         data-aos="fade-up"
       >
